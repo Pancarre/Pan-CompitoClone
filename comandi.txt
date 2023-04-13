@@ -1,0 +1,30 @@
+   87  git merge newFeature-Navbar
+   88  git checkout newFeature-Navbar
+   89  git merge newFeature-Navbar
+   90  git push origin master
+   91  cd Desktop
+   92  cd Pan-Compito1
+   93  git clone https://github.com/sena-meucci/progettoStampa.git
+   94  cd .
+   95  cd ..
+   96  mkdir verifica
+   97  mkdir Panverifica
+   98  cd Panverifica
+   99  git init
+  100  git clone https://github.com/sena-meucci/progettoStampa.git
+  101  cd ProgettoStampa
+  102  cd progettoStampa
+  103  git config user.name "Alesiso"
+  104  git config user.mail"pan.alessio@itismeucci.com"
+  105  git commit -m "inserito nome"
+  106  git add .
+  107  git commit -m "inserito nome"
+  108  git branch BugFix
+  109  git checkout BugFix
+  110  git add .
+  111  git commit -m "errore risolto in stampa"
+  112  git merge BugFix
+  113  git checkout master
+  114  git merge BugFix
+  115  git branch -d BugFix
+  116  history 30 > comandi.txt
